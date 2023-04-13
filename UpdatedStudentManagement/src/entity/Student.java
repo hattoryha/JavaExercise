@@ -7,4 +7,8 @@ public class Student extends Person{
         super(name, age);
         this.learningCapacity = learningCapacity;
     }
+
+    public void setLearningCapacity(String learningCapacity) {
+        this.learningCapacity = learningCapacity;
+    }
 }

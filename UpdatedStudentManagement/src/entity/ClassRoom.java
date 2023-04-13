@@ -4,13 +4,33 @@ import java.util.ArrayList;
 
 public class ClassRoom {
     private String subject;
-    static ArrayList <Student> students;
+    private ArrayList <Student> students;
     public ClassRoom(String subject, ArrayList<Student> students) {
         this.subject = subject;
         this.students = students;
     }
 
-    public static void setStudents(ArrayList<Student> students) {
-        ClassRoom.students = students;
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "ClassRoom{" +
+                "subject='" + subject + '\'' +
+                ", students=" + students +
+                '}';
     }
 }
